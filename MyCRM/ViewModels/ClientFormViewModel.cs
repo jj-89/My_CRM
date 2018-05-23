@@ -25,11 +25,15 @@ namespace MyCRM.ViewModels
         public string Email { get; set; }
 
 
-        public int PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
         [Required(ErrorMessage = "I need to know which product/service you are interested in, and your preferred method of contact.")]
         [Display(Name = "Brief description of the product/service you are interested in.")]
         public string Message { get; set; }
+
+        public int NumberOfCalls { get; set; }
+
+        public string CallLog { get; set; }
 
     }
 }

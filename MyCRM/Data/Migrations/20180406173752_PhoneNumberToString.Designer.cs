@@ -11,9 +11,10 @@ using System;
 namespace MyCRM.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180406173752_PhoneNumberToString")]
+    partial class PhoneNumberToString
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -190,8 +191,6 @@ namespace MyCRM.Data.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("CallLog");
-
                     b.Property<string>("CompanyName");
 
                     b.Property<string>("Email");
@@ -201,8 +200,6 @@ namespace MyCRM.Data.Migrations
                     b.Property<string>("LastName");
 
                     b.Property<string>("Message");
-
-                    b.Property<int>("NumberOfCalls");
 
                     b.Property<string>("PhoneNumber");
 

@@ -32,7 +32,8 @@
                 <ul class="nav navbar-nav">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Client" asp-action="Add">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Client" asp-action="Index">Clients</a></li>
                 </ul>
                 @await Html.PartialAsync("_LoginPartial")
             </div>
@@ -40,8 +41,9 @@
     </nav>
     <div class="container body-content">
         @RenderBody()
+
         <hr />
-        <footer>
+        <footer class="row">
             <p>&copy; 2018 - MyCRM</p>
         </footer>
     </div>

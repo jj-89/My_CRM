@@ -8,9 +8,7 @@ namespace MyCRM.Models.AccountViewModels
 {
     public class RegisterViewModel
     {
-        [Required]
-        [Display(Name = "Company Name")]
-        public string CompanyName { get; set; }
+        
 
         [Required]
         [Display(Name = "First Name")]
